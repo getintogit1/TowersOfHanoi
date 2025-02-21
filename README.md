@@ -17,6 +17,10 @@ FUNCTION MoveTower(disk, source, dest, spare):
 - **Recursive Solution**: Solves the Towers of Hanoi puzzle using a recursive algorithm.
 - **Terminal Visualization**: Displays the state of the towers after each move, showing how the disks are transferred between pegs.
 
+## Preview
+![image](https://github.com/user-attachments/assets/7713ed48-fd17-4209-b042-57c6e8c3f68c)
+
+
 ## How It Works:
 
 The puzzle consists of 3 pegs (A, B, and C) and a number of disks of different sizes. Initially, all the disks are stacked on peg A in descending order. The objective is to move all the disks from peg A to peg C, using peg B as an auxiliary, following these rules:
