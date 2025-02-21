@@ -44,4 +44,7 @@ The program uses recursion to solve the puzzle and visualizes the state of the t
 1. **Clone the repository** to your local machine:
 
    ```terminal
+   
    git clone https://github.com/yourusername/towers-of-hanoi-java.git
+   javac TowersOfHanoi.java
+   java Main.java
