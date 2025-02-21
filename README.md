@@ -13,8 +13,8 @@ FUNCTION MoveTower(disk, source, dest, spare):
         MoveTower(disk - 1, source, spare, dest)   // Step 1: Move n-1 disks from source to spare
         move disk from source to dest              // Step 2: Move the nth disk from source to destination
         MoveTower(disk - 1, spare, dest, source)   // Step 3: Move n-1 disks from spare to destination
-    END IF
-```plaintext
+    END IF```
+
 ## How It Works:
 The puzzle consists of 3 pegs (A, B, and C) and a number of disks of different sizes. Initially, all the disks are stacked on peg A in descending order. The objective is to move all the disks from peg A to peg C, using peg B as an auxiliary, following these rules:
 1. Only one disk can be moved at a time.
