@@ -2,6 +2,16 @@
 
 This is a terminal-based implementation of the **Towers of Hanoi** puzzle in Java. The program allows the user to interact with the classic puzzle by selecting the number of disks and visualizing the recursive solution process in the terminal.
 
+## Pseudocode: 
+FUNCTION MoveTower(disk, source, dest, spare):
+    IF disk == 0 THEN
+        move disk from source to dest
+    ELSE
+        MoveTower(disk - 1, source, spare, dest)   // Step 1: Move n-1 disks from source to spare
+        move disk from source to dest              // Step 2: Move the nth disk from source to destination
+        MoveTower(disk - 1, spare, dest, source)   // Step 3: Move n-1 disks from spare to destination
+    END IF
+
 ## Features:
 - **Interactive Gameplay**: Allows users to select the number of disks for the puzzle (between 1 and 7).
 - **Recursive Solution**: Solves the Towers of Hanoi puzzle using a recursive algorithm.
