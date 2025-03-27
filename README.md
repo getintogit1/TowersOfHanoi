@@ -10,9 +10,9 @@ FUNCTION MoveTower(disk, source, dest, spare):
     IF disk == 0 THEN
         move disk from source to dest
     ELSE
-        MoveTower(disk - 1, source, spare, dest)   // Step 1: Move n-1 disks from source to spare
-        move disk from source to dest              // Step 2: Move the nth disk from source to destination
-        MoveTower(disk - 1, spare, dest, source)   // Step 3: Move n-1 disks from spare to destination
+        MoveTower(disk - 1, source, spare, dest)  
+        move disk from source to dest             
+        MoveTower(disk - 1, spare, dest, source)   
     END IF</pre>
 
 ## How It Works:
